@@ -42,16 +42,67 @@
     background-image: url("image2.png");
 }
 
+.image-4 {
+    background-image: url("image4.png");
+}
+
+.image-5 {
+    background-image: url("image5.png");
+}
+
 .right-text {
     width: 50%;
     opacity: 0.6;
     background-color: black;
-    color: white;
-    /* padding-top: 80px; */
-    /* font-size: 40px; */
-    height: 585px;
-    text-align: left;
+    height: 100%;
+}
+
+.title-with-options {
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 20px;
     /* padding-left: 50px; */
+    color: white;
+    text-align: left;
+    display: inline-block;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-left: 50px;
+    color: white;
+    text-align: left;
+}
+
+.big-text {
+    font-size: 42px;
+    padding-left: 50px;
+    text-align: left;
+    padding-right: 50px;
+    color: white;
+}
+
+.options {
+    color: white;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 25px;
+    padding-left: 50px;
+    text-align: left;
+    padding-right: 50px;
+    color: white;
+}
+
+.underscore {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 50px;
+    color: white;
+    text-align: left;
 }
 
 .image-3 {
@@ -65,11 +116,11 @@
   }
   
   .aside-1 {
-    background: gold;
+    /* background: gold; */
   }
   
   .aside-2 {
-    background: hotpink;
+    /* background: hotpink; */
   }
 
   .aside-3 {
