@@ -1,0 +1,165 @@
+body { margin: 0; }
+
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+  }
+
+  .wrapper > * {
+    padding: 0px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: white;
+    color: darkblue;
+    height: 120px;
+    font-size: 42px;
+  }
+  
+  .footer {
+    background-color: #012d5c;
+    height: 195px;
+    color: white;
+    font-size: 42px;
+  }
+
+  .footer-text {
+    padding-top: 70px;
+    padding-left: 50px;
+  }
+
+  .header-text {
+    padding-top: 30px;
+    padding-left: 50px;
+    color: darkblue;
+  }
+  
+.white { background-color: white; }
+
+.gray { background-color: #bdbfbe }
+
+.gray-2 { background-color: #555555 }
+
+.gray-3 { background-color: #363a3c }
+
+.blue { background-color: #002d5c; }
+
+.red { background-color: #e30032; }
+
+.image-1 { background-image: url("image1.png"); }
+
+.image-2 { background-image: url("image2.png"); }
+
+.image-3 {
+    background-image: url("image3.png");
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-4 { background-image: url("image4.png"); }
+
+.image-5 { background-image: url("image5.png"); }
+
+.image-6 { background-image: url("image6.png"); }
+
+.image-7 { background-image: url("image7.png"); }
+
+.image-8 { background-image: url("image8.png"); }
+
+.image-9 { background-image: url("image9.png"); }
+
+.image-10 { background-image: url("image10.png"); }
+
+.right-text {
+    width: 50%;
+    opacity: 0.6;
+    background-color: black;
+    height: 100%;
+}
+
+.left-text {
+    width: 60%;
+    opacity: 0.6;
+    background-color: darkblue;
+    height: 100%;
+}
+
+.title-with-options {
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-left: 50px;
+    color: white;
+    text-align: left;
+    display: inline-block;
+}
+
+.title {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 50px;
+    color: white;
+    text-align: left;
+}
+
+.big-text {
+    font-size: 42px;
+    padding-left: 50px;
+    text-align: left;
+    padding-right: 50px;
+    color: white;
+}
+
+.options {
+    color: white;
+    font-size: 20px;
+}
+
+.small-text-white {
+    font-size: 20px;
+    padding-left: 50px;
+    text-align: left;
+    padding-right: 50px;
+    color: white;
+}
+
+.small-text-blue {
+    font-size: 20px;
+    padding-left: 50px;
+    text-align: left;
+    padding-right: 50px;
+    color: darkblue ;
+}
+
+.text {
+    font-size: 25px;
+    padding-left: 50px;
+    text-align: left;
+    padding-right: 50px;
+    color: white;
+}
+
+.underscore {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 50px;
+    color: white;
+    text-align: left;
+}
+
+
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; height:585px; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .aside-small    { flex: 2 0px; }
+    .aside-medium    { flex: 3 0px; }
+    .aside-big    { flex: 5 0px; }
+    .aside-biggest    { flex: 6 0px; }
+  }
+  
