@@ -1,3 +1,4 @@
+body { margin: 0; }
 
 .wrapper {
     display: flex;  
@@ -34,65 +35,41 @@
     color: darkblue;
   }
   
-.white {
-    background-color: white;
+.white { background-color: white; }
+
+.gray { background-color: #bdbfbe }
+
+.gray-2 { background-color: #555555 }
+
+.gray-3 { background-color: #363a3c }
+
+.blue { background-color: #002d5c; }
+
+.red { background-color: #e30032; }
+
+.image-1 { background-image: url("image1.png"); }
+
+.image-2 { background-image: url("image2.png"); }
+
+.image-3 {
+    background-image: url("image3.png");
+    display: flex;
+    justify-content: flex-end;
 }
 
-.gray {
-    background-color: #bdbfbe
-}
+.image-4 { background-image: url("image4.png"); }
 
-.gray-2 {
-    background-color: #555555
-}
+.image-5 { background-image: url("image5.png"); }
 
-.gray-3 {
-    background-color: #363a3c
-}
+.image-6 { background-image: url("image6.png"); }
 
-.blue {
-    background-color: #002d5c;
-}
+.image-7 { background-image: url("image7.png"); }
 
-.red {
-    background-color: #e30032;
-}
+.image-8 { background-image: url("image8.png"); }
 
-.image-1 {
-    background-image: url("image1.png");
-}
+.image-9 { background-image: url("image9.png"); }
 
-.image-2 {
-    background-image: url("image2.png");
-}
-
-.image-4 {
-    background-image: url("image4.png");
-}
-
-.image-5 {
-    background-image: url("image5.png");
-}
-
-.image-6 {
-    background-image: url("image6.png");
-}
-
-.image-7 {
-    background-image: url("image7.png");
-}
-
-.image-8 {
-    background-image: url("image8.png");
-}
-
-.image-9 {
-    background-image: url("image9.png");
-}
-
-.image-10 {
-    background-image: url("image10.png");
-}
+.image-10 { background-image: url("image10.png"); }
 
 .right-text {
     width: 50%;
@@ -173,27 +150,16 @@
     text-align: left;
 }
 
-.image-3 {
-    background-image: url("image3.png");
-    display: flex;
-    justify-content: flex-end;
-}
+
   
   @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; height:585px; }
   }
   
   @media all and (min-width: 800px) {
-    .aside-0    { flex: 2 0px; }
-    .aside-1    { flex: 3 0px; }
-    .aside-2    { flex: 3 0px; }
-    .aside-3    { flex: 2 0px; }
-    .aside-4    { flex: 6 0px; }
-    .aside-5    { flex: 5 0px; }
+    .aside-small    { flex: 2 0px; }
+    .aside-medium    { flex: 3 0px; }
+    .aside-big    { flex: 5 0px; }
+    .aside-biggest    { flex: 6 0px; }
   }
   
-  body {
-    /* padding: 2em;  */
-    margin: 0;
-    /* background-color: blue; */
-  }
