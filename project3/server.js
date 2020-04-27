@@ -79,6 +79,19 @@ app.post("/api/todos", function(req, res) {
   );
 });
 
+app.put("/api/todos/:todo_id", function(req,res) {
+    Todo.update(
+        {
+            _id: req.params.todo_id,
+        },
+        {
+            done: req.body.done
+        },
+        function(err, todo) {
+            if (err) res.send(err);
+        }
+        );
+});
 
 // delete a todo
 app.delete("/api/todos/:todo_id", function(req, res) {

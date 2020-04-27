@@ -35,18 +35,20 @@
                                 <h1>nodeTODO {{ cos }} <span class="label label-info">{{ todos.length }}</span></h1>
                         </div>
 
+                        <button ng-click="mode='all'">ALL</button>
+                        <button ng-click="mode='unfinished'">UNFINISHED</button>
+                        <button ng-click="mode='completed'">COMPLETED</button>
+                        
                         <!-- TODO LIST -->
                         <div id="todo-list" class="row">
                                 <div class="col-sm-4 col-sm-offset-4">
-
                                         <!-- LOOP OVER THE TODOS IN $scope.todos -->
-                                        <div class="checkbox" ng-repeat="todo in todos">
+                                        <div class="checkbox" ng-repeat="todo in listFiltered()">
                                                 <label>
                                                         <input type="checkbox" ng-click="updateTodo(todo._id)" ng-model="todo.done">
                                                         {{ todo.text }} <button ng-click="deleteTodo(todo._id)">X</button>      
                                                 </label>
                                         </div>
-
                                 </div>
                         </div>
 
