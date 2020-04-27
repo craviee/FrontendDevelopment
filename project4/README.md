@@ -25,9 +25,7 @@ The data model used represent students.
   * type:"number",
   * required:true
 
-### API
-
-#### RESTful
+### RESTful API
 
 **GET /students** -> find students matching criteria provided on the query string.
 
@@ -65,8 +63,8 @@ ___
 **DELETE /students/:id** -> destroy the student with the given unique ID
 
 Example: DELETE http://localhost:1337/students/5ea71cb30d966c91f67a6018
-
-#### Shortcut routes for development-mode
+___
+### Shortcut routes API for development-mode
 Shortcut routes are a simple (development-mode only) hack that provides access to your models from your browser's URL bar.
 
 **GET /students/find**
@@ -88,7 +86,7 @@ ___
 **GET /students/destroy/:id**
 
 Example: http://localhost:1337/students/5ea71cb30d966c91f67a6018
-
+___
 ### Links
 
 + [Sails framework documentation](https://sailsjs.com/get-started)
