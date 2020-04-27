@@ -30,45 +30,58 @@ The data model used represent students.
 #### RESTful
 
 GET /students -> find students matching criteria provided on the query string.
+
 Example: GET http://localhost:1337/students
 
 GET /students/:id -> find a single student with the given unique ID (i.e. primary key) value.
+
 Example: GET http://localhost:1337/students/5ea71cb30d966c91f67a6018
 
 POST /students -> create a new student with the attributes provided in the request body.
+
 Example: POST http://localhost:1337/students
+```
 {
     "name": "Daniel",
     "email": "craviee@pm.me",
     "course": "Software Engineering",
     "semester": 3
 }
-
+```
 PATCH /students/:id -> update the student with the given unique ID with the attributes provided in the request body.
+
 Example: PATCH http://localhost:1337/students/5ea71cb30d966c91f67a6018
+```
 {
     "email": "craviee@protonmail.com"
 }
+```
 
 DELETE /students/:id -> destroy the student with the given unique ID
+
 Example: DELETE http://localhost:1337/students/5ea71cb30d966c91f67a6018
 
 #### Shortcut routes for development-mode
 Shortcut routes are a simple (development-mode only) hack that provides access to your models from your browser's URL bar.
 
 GET /students/find
+
 Example: http://localhost:1337/students/find?course=Software%20Engineering
 
 GET /students/find/:id
+
 Example: http://localhost:1337/students/5ea71cb30d966c91f67a6018
 
 GET /students/create
+
 Example: http://localhost:1337/students/create?name=Daniel&email=craviee@pm.me&course=Software%20Engineering&semester=3
 
 GET /students/update/:id
+
 Example: http://localhost:1337/students/5ea71cb30d966c91f67a6018/email=craviee@protonmail.com
 
 GET /students/destroy/:id
+
 Example: http://localhost:1337/students/5ea71cb30d966c91f67a6018
 
 ### Links
