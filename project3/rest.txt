@@ -1,0 +1,19 @@
+http://localhost:4000/api/todos
+
+
+POST http://localhost:4000/api/todos HTTP/1.1
+content-type: application/json
+
+{
+	"text" : "Zrobic cos"
+}
+
+PUT http://localhost:4000/api/todos/5df20a025c6797ad33157a80 HTTP/1.1
+content-type: application/json
+{
+	"done" : "false"
+}
+
+DELETE http://localhost:4000/api/todos/5df20a025c6797ad33157a80 HTTP/1.1
+
+
