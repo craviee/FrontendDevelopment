@@ -2,6 +2,15 @@
 
 a [Sails v1](https://sailsjs.com) application using MongoDB
 
+### How to test
+
+1. Run the server:
+```
+$ cd crud_project/
+$ sails lift
+```
+2. Access the API on http://localhost:1337/
+
 ### Model
 
 The data model used represent students.
