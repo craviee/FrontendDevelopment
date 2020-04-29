@@ -1,0 +1,19 @@
+<header>
+    <h1>MMO List</h1>
+    <form class="new-mmo" ng-submit="$ctrl.addMMO($ctrl.newMMO)">
+        <input ng-model="$ctrl.newMMO" type="text" name="text" placeholder="Type to add new MMOs" />
+        <div><button class="button" ng-submit="$ctrl.addMMO($ctrl.newMMO)">Add MMO</button></div>
+        <button class="fas fa-arrow-up"
+            ng-class="{'fa-arrow-up': ($ctrl.order=='Ascending'), 'fa-arrow-down': ($ctrl.order=='Descending')}"
+            style="margin-top: 10px;" ng-click="$ctrl.toggleOrder()"></button> {{$ctrl.order}} order
+    </form>
+</header>
+
+<ul>
+    <li ng-repeat="mmo in ($ctrl.order=='Ascending' ? $ctrl.mmosAsc : $ctrl.mmosDsc)">
+        <button class="delete" ng-click="$ctrl.removeMMO(mmo)">&times;</button>
+        <button class="far fa-thumbs-up green" ng-click="$ctrl.upVote(mmo)"></button> {{mmo.upvotes}}
+        <button class="far fa-thumbs-down red" ng-click="$ctrl.downVote(mmo)"></button> {{mmo.downvotes}}
+        <span class="mmo-text">{{mmo.text}}</span>
+    </li>
+</ul>
