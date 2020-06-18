@@ -20,6 +20,9 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+  'get /students/delete/:id': 'StudentsController.delete',
+  'get /students/edit/:id': 'StudentsController.edit',
+  'post /students/update/:id': 'StudentsController.update',
 
 
   /***************************************************************************

@@ -1,0 +1,26 @@
+<h1 class="display-4">Students</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Course</th>
+            <th>Semester</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% students.forEach(function(student){ %>
+            <tr>
+                <td><%= student.name %></td>
+                <td><%= student.email %></td>
+                <td><%= student.course %></td>
+                <td><%= student.semester %></td>
+                <td>
+                    <a href="/students/edit/<%= student.id %>" class="btn btn-primary">Edit</a>
+                    <a href="/students/delete/<%= student.id %>" class="btn btn-danger">X</a>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
