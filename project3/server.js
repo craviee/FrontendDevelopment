@@ -13,8 +13,8 @@ var port = 4000;
 
 // configuration ===============================================================
 
-mongoose.connect("mongodb://ja:dupadupa12@ds119072.mlab.com:19072/lol", {
-  useNewUrlParser: true
+mongoose.connect("mongodb://root@localhost:27017/lol", {
+//   useNewUrlParser: true
 }); // connect to mongoDB database on modulus.io
 
 app.set("port", process.env.PORT || port);
