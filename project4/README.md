@@ -3,13 +3,18 @@
 a [Sails v1](https://sailsjs.com) application using MongoDB
 
 ### How to test
+1. Install mondogb and assure that the link `mongodb://root@localhost/crud` is valid
 
-1. Run the server:
+2. Install packages:
+```
+$ npm install
+```
+3. Run the server:
 ```
 $ cd crud_project/
 $ sails lift
 ```
-2. Access the API on http://localhost:1337/
+4. Access the API on http://localhost:1337/
 
 ### Model
 
